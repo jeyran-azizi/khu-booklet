@@ -1,0 +1,217 @@
+{% extends 'BookletApp/base.html' %}
+
+{% block page_header %}
+   <head>
+	<link rel="stylesheet" href="/static/css/styles.css">
+	<script src="/static/scripts/script.js"></script>
+	<style>
+        body {
+         background-color: white;
+		 }
+		 .card {
+			width: 30%;
+			margin: 1%;
+			background-color: lightgray;
+			padding: 20px;
+			box-sizing: border-box;
+			float: left;
+			display: flex;
+			justify-content: center;
+		 }
+
+		 .card.name {
+			text-align: center;
+			
+		 }
+
+		 .clearfix::after {
+			content: "";
+			display: table;
+			clear: both;
+		 }
+        
+      </style>
+   </head>	
+{% endblock page_header %}
+
+{% block content %}
+
+
+   <body>
+
+	<form class="form-inline my-2 my-lg-0 ml-auto" id="searchForm">
+		<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+		<button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+	</form>
+	<br> 
+
+
+	<div class="card">	
+		<img src="/static/images/probability.jpg" alt=""><br>
+		<div class="name">
+	       <a href="randomprocesses">Random Processes</a>
+		</div>   
+	</div>
+
+	<div class="card">
+		<img src="/static/images/fuzzy.jpg" alt=""><br>
+		<div class="name">
+		  <a href="fuzzy">Fuzzy Sets</a>
+		</div>  
+	</div>
+
+	<div class="card">
+		<img src="/static/images/Graph-Theory.jpg" alt=""><br>
+		<div class="name">
+		   <a href="graph">Graph Theory</a>
+		</div>   
+	</div>
+
+	<div class="clearfix"></div>
+
+	<div class="card">
+		<img src="/static/images/stat1.jpg" alt=""><br>
+		<div class="name">
+		   <a href="stat_methods">Statistical Methods</a>
+		</div>   
+	</div>
+  
+	<div class="card">
+		<img src="/static/images/prob1 (2).jpg" alt=""><br>
+		<div class="name">
+		   <a href="probability1">Probability1</a>
+		</div>   
+	</div>
+  
+	<div class="card">
+		<img src="/static/images/matlab.jpg" alt=""><br>
+		<div class="name">
+		  <a href="math_softwares">Mathematical Softwares</a>
+		</div>  
+	</div>
+  
+	<div class="clearfix"></div>
+
+	<div class="card">
+		<img src="/static/images/stat1.jpg" alt=""><br>
+		<div class="name">
+		   <a href="stat_methods">Statistical Methods</a>
+		</div>   
+	</div>
+  
+	<div class="card">
+		<img src="/static/images/prob1 (2).jpg" alt=""><br>
+		<div class="name">
+		   <a href="probability1">Probability1</a>
+		</div>   
+	</div>
+  
+	<div class="card">
+		<img src="/static/images/matlab.jpg" alt=""><br>
+		<div class="name">
+		  <a href="math_softwares">Mathematical Softwares</a>
+		</div>  
+	</div>
+  
+	<div class="clearfix"></div>
+
+
+
+
+
+   </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+	<div class="card mb-4">
+		<div class="card-body">
+			   
+		 <a href="randomprocesses">Random Processes</a>
+		</div>
+	</div>
+	
+	<div class="card mb-4">
+		<div class="card-body">   
+		 <a href="fuzzy">Fuzzy Sets</a>
+		</div>
+	</div>
+	
+	<div class="card mb-4">
+		<div class="card-body">   
+		 <a href="graph">Graph Theory</a>
+		</div>
+	</div>
+	
+	<div class="card mb-4">
+		<div class="card-body">   
+		 <a href="stat_methods">Statistical Methods</a>
+		</div>
+	</div>
+	
+	<div class="card mb-4">
+		<div class="card-body">   
+		 <a href="probability1">Probability1</a>
+		</div>
+	</div>
+	
+	<div class="card mb-4">
+		<div class="card-body">   
+		 <a href="math_softwares">Mathematical Softwares</a>
+		</div>
+	</div>
+	
+	<div class="card mb-4">
+		<div class="card-body">   
+		 <a href="ad_programming">Advanced Programming</a>
+		</div>
+	</div>
+	
+	<div class="card mb-4">
+		<div class="card-body">   
+		 <a href="ranalysis">Real Analysis</a>
+		</div>
+	</div>
+	
+	<div class="card mb-4">
+		<div class="card-body">   
+		 <a href="coding">Coding & Cryptography</a>
+		</div>
+	</div>
+	
+	<div class="card mb-4">
+		<div class="card-body">   
+		 <a href="lopt">Linear Optimization</a>
+		</div>
+	</div>
+	
+
+
+
+	{% for category in categories %}
+	    <div class="card mb-4">
+			<div class="card-body">   
+			 <a href="/files/">{{ category.name }}</a>
+			</div>
+	    </div>
+	{% empty %}
+	    <li><h3>No category have been added yet.</h3></li>
+	{% endfor %}	
+	 
+	<!--h6><a href="{% url 'new_category' %}">I haven't found my category</h6-->
+
+{% endblock content %}	
+
+

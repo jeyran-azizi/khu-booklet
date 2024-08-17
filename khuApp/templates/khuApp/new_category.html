@@ -1,0 +1,22 @@
+{% extends 'BookletApp/base.html' %}
+
+{% block page_header %}
+<h2>Add a new category</h2>
+{% endblock page_header %}
+
+{% block content %}
+ <div class="container mt-5"> 
+   <form action="{% url 'categories_list' %}" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+
+    <div class="form-group">
+      <label for="category">Category:</label>
+      <input type="text" class="form-control" id="category" name="category">
+    </div>
+
+    <div class="form-group">
+        <label for="description">description:</label>
+        <input type="text" class="form-control" id="description" name="description">
+    </div>
+
+    {% endblock content %}

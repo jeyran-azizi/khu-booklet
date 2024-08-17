@@ -1,0 +1,156 @@
+{% extends 'BookletApp/base.html' %}
+{% load static %}
+
+{% block page_header %}
+<head>
+
+    <link rel="stylesheet" href="/static/css/styles.css">
+	<script src="/static/scripts/script.js"></script>
+
+    <!--style>
+        .container {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 10px;
+        }
+  
+        .container > div {
+          padding: 20px;
+          border: 1px solid black;
+        }
+  
+
+      </style-->
+
+    <!--style>
+        .container {
+  display: flex;
+}
+
+.column1, .column2 {
+  width: 200px;
+  background-color: lightgray;
+}
+
+.column3 {
+  flex-grow: 1;
+  background-color: lightblue;
+}
+  
+    </style-->
+
+</head>    
+
+{% endblock page_header %}
+
+{% block content %}
+<body>
+
+    <!--div class="container">
+        <div>
+            <img src="/static/images/booklet1.jpg" alt="image" class="img-fluid">
+        </div>
+        <div>
+            <ul>
+                <li class="list-item">
+                    <span class="name" style="font-size: 20px;">نام استاد: </span>
+                    <span class="description" style="font-size: 20px; color: darkorange;"><b>دکتر مهدی چراخلو</b></span>
+                   
+                    
+                </li>
+            </ul>    
+
+        </div>
+        <div class="third-column">
+            <h5 class="text-center" style="color:darkorange;"><b>امتیازدهی</b></h5><br>
+        </div>
+      </div-->
+
+
+
+
+
+
+
+
+
+
+    <!--div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="/static/images/booklet1.jpg" alt="image" class="img-fluid">
+          </div>
+          <div class="col-md-6">
+            <ul>
+                <li class="list-item">
+                    <span class="name" style="font-size: 20px;">نام استاد: </span>
+                    <span class="description" style="font-size: 20px; color: darkorange;"><b>دکتر مهدی چراخلو</b></span>
+                   
+                    
+                </li>
+            </ul>    
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <h5 class="text-center" style="color:darkorange;"><b>امتیازدهی</b></h5><br>
+          </div>
+        </div>
+      </div-->
+
+
+<!--div class="container">
+  <div class="column1">
+    <img src="/static/images/booklet1.jpg" alt="image" class="img-fluid">
+  </div>
+  
+  <div class="column2">
+    <ul>
+        <li class="list-item">
+            <span class="name" style="font-size: 20px;">نام استاد: </span>
+            <span class="description" style="font-size: 20px; color: darkorange;"><b>دکتر مهدی چراخلو</b></span>
+           
+            
+        </li>
+    </ul>    
+  </div>
+</div>
+
+<div class="column3">
+    <h5 class="text-center" style="color:darkorange;"><b>امتیازدهی</b></h5><br>
+</div-->
+
+
+
+
+
+ <div class="card">
+  <div class="card-body">
+    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr;">
+        <div>
+            <img src="/static/images/booklet1.jpg" alt="image" class="img-fluid">
+        </div>
+        <div>
+         
+            <ul>
+                <li class="list-item">
+                    <span class="name" style="font-size: 20px;">نام استاد: </span>
+                    <span class="description" style="font-size: 20px; color: darkorange;"><b>دکتر مهدی چراخلو</b></span>
+                   
+                    
+                </li>
+            </ul>    
+        </div>
+        <div>
+            <h5 class="text-center" style="color:darkorange;"><b>امتیازدهی</b></h5><br>
+        </div>
+      </div>
+
+
+
+
+
+     
+
+</body>
+{% endblock content %}	

@@ -1,0 +1,81 @@
+{% extends 'khuApp/base.html' %}
+
+{% block page_header %}
+   <head>
+	<link rel="stylesheet" href="/static/css/styles.css">
+	<script src="/static/scripts/script.js"></script>
+	<style>
+        body {
+         background-color: black;
+		 
+        }
+
+		.card {
+			width: 30%;
+			margin: 1%;
+			background-color: lightgray;
+			padding: 20px;
+			box-sizing: border-box;
+			float: left;
+			display: flex;
+			justify-content: center;
+		 }
+
+		 .card.name {
+			text-align: center;
+			
+		 }
+
+		 .clearfix::after {
+			content: "";
+			display: table;
+			clear: both;
+		 }
+      </style>
+   </head>	
+{% endblock page_header %}
+
+{% block content %}
+
+<body>
+
+	<form class="form-inline my-2 my-lg-0 ml-auto" id="searchForm">
+		<input class="form-control mr-sm-2" type="search" aria-label="Search">
+		<button class="btn btn-outline-primary my-2 my-sm-0" type="submit">جست‌وجو</button>
+	</form>
+	<br>
+
+    <a href="randomprocesses">
+	<div class="card">
+        
+		<img src="/static/images/probability.jpg" alt=""><br>
+		<div class="text-center">
+			<h4>فرآیندهای تصادفی</h4>
+		</div> 
+	</div>
+    </a>
+
+	
+    <a href="">
+	<div class="card">
+		<img src="/static/images/t-math (2).jpg" alt=""><br>
+		<div class="text-center">
+		   
+		     <h4>تاریخ ریاضیات</h4>
+		</div>   
+	</div>
+    </a>
+
+	<div class="clearfix"></div>
+
+	
+
+</body>
+	
+
+
+	 
+
+{% endblock content %}	
+
+
