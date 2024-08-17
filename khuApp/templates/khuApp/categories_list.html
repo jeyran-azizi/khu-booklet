@@ -32,22 +32,22 @@
       <a href="home.html" class="logo"><img src="static/images/khu booklet logo purple.png" alt="" class="img-fluid" width="200" height="500"></a>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="{% url 'home' %}"><img src="static/images/khooneh purple.png" alt="" class="img-fluid" width="32"></a></li>
-          <li><a class="nav-link scrollto" href="{% url 'about' %}"><img src="static/images/darbereh ma purple.png" alt="" class="img-fluid" width="50"></a></li>
-          <li class="dropdown"><a href="{% url 'categories_list' %}"><span><img src="static/images/vorood purple.png" alt="" class="img-fluid" width="32"></span> <i class="bi bi-chevron-down"></i></a>
+          <li><a class="nav-link scrollto active" href="index"><img src="static/images/khooneh purple.png" alt="" class="img-fluid" width="32"></a></li>
+          <li><a class="nav-link scrollto" href="khuApp/templates/khuApp/about"><img src="static/images/darbereh ma purple.png" alt="" class="img-fluid" width="50"></a></li>
+          <li class="dropdown"><a href="khuApp/templates/khuApp/categories_list"><span><img src="static/images/vorood purple.png" alt="" class="img-fluid" width="32"></span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="{% url 'users:register' %}">ثبت‌نام</a></li>
               <li><a href="{% url 'users:logout' %}">خروج</a></li>
             </ul>
           </li>
-          <li class="dropdown"><a href="{% url 'categories_list' %}"><span><img src="static/images/ketabkhooneh purple.png" alt="" class="img-fluid" width="55"></span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="khuApp/templates/khuApp/categories_list"><span><img src="static/images/ketabkhooneh purple.png" alt="" class="img-fluid" width="55"></span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="{% url 'categories_list' %}">دروس اختصاصی</a></li>
-              <li><a href="{% url 'general' %}">دروس عمومی</a></li>
+              <li><a href="khuApp/templates/khuApp/categories_list">دروس اختصاصی</a></li>
+              <li><a href="khuApp/templates/khuApp/general">دروس عمومی</a></li>
             </ul>
           </li>
-          <li><a class="nav-link scrollto " href="{% url 'contact' %}"><img src="static/images/ertebat ba ma purple.png" alt="" class="img-fluid" width="65"></a></li>
-          <li><a class="nav-link scrollto" href="{% url 'help' %}"><img src="static/images/rahnama purple.png" alt="" class="img-fluid" width="36"></a></li>
+          <li><a class="nav-link scrollto " href="khuApp/templates/khuApp/contact"><img src="static/images/ertebat ba ma purple.png" alt="" class="img-fluid" width="65"></a></li>
+          <li><a class="nav-link scrollto" href="khuApp/templates/khuApp/help"><img src="static/images/rahnama purple.png" alt="" class="img-fluid" width="36"></a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -64,7 +64,7 @@
 		<div class="row">
 			<div class="col-md-6 col-lg-2 d-flex align-items-stretch mb-5 mb-lg-0">
 			  <div class="icon-box">
-				<div class="icon"><a href="{% url 'randomprocesses' %}"><img src="static/images/gamble 2.png" alt="" class="img-fluid" width="120"></div>
+				<div class="icon"><a href="khuApp/templates/khuApp/randomprocesses"><img src="static/images/gamble 2.png" alt="" class="img-fluid" width="120"></div>
 				<h4 class="title">فرآیندهای تصادفی</h4></a>
 				<p class="description">اختصاصی - اختیاری</p>
 			  </div>
@@ -72,7 +72,7 @@
 
 			<div class="col-md-6 col-lg-2 d-flex align-items-stretch mb-5 mb-lg-0">
 				<div class="icon-box">
-				  <div class="icon"><a href="{% url 'ranalysis' %}"><img src="static/images/ranalysis icon.png" alt="" class="img-fluid" width="120"></div>
+				  <div class="icon"><a href="khuApp/templates/khuApp/ranalysis"><img src="static/images/ranalysis icon.png" alt="" class="img-fluid" width="120"></div>
 				  <h4 class="title">آنالیز ریاضی</h4></a>
 				  <p class="description">اختصاصی - الزامی</p>
 				</div>
@@ -80,7 +80,7 @@
 
 			  <div class="col-md-6 col-lg-2 d-flex align-items-stretch mb-5 mb-lg-0">
 				<div class="icon-box">
-				  <div class="icon"><a href="{% url 'numth' %}"><img src="static/images/numth icon.svg" alt="" class="img-fluid" width="120"></div>
+				  <div class="icon"><a href="khuApp/templates/khuApp/numth"><img src="static/images/numth icon.svg" alt="" class="img-fluid" width="120"></div>
 				  <h4 class="title">نظریه مقدماتی اعداد</h4></a>
 				  <p class="description">اختصاصی - انتخابی</p>
 				</div>
@@ -89,7 +89,7 @@
 
 			  <div class="col-md-6 col-lg-2 d-flex align-items-stretch mb-5 mb-lg-0">
 				<div class="icon-box">
-				  <div class="icon"><a href="{% url 'coding' %}"><img src="static/images/coding icon.jpg" alt="" class="img-fluid" width="120"></div>
+				  <div class="icon"><a href="khuApp/templates/khuApp/coding"><img src="static/images/coding icon.jpg" alt="" class="img-fluid" width="120"></div>
 				  <h4 class="title">نظریه کدگذاری</h4></a>
 				  <p class="description">اختصاصی - اختیاری</p>
 				</div>
@@ -97,7 +97,7 @@
 
 			  <div class="col-md-6 col-lg-2 d-flex align-items-stretch mb-5 mb-lg-0">
 				<div class="icon-box">
-				  <div class="icon"><a href="{% url 'comfunc' %}"><img src="static/images/comfunc icon 3.png" alt="" class="img-fluid" width="100"></div>
+				  <div class="icon"><a href="khuApp/templates/khuApp/comfunc"><img src="static/images/comfunc icon 3.png" alt="" class="img-fluid" width="100"></div>
 				  <h4 class="title">توابع مختلط</h4></a>
 				  <p class="description">اختصاصی - انتخابی</p>
 				</div>
@@ -396,61 +396,9 @@
 
     </section>
 
-    <!-- ======= Cta Section ======= -->
-    <section id="cta" class="cta">
-      <div class="container">
-
-        <div class="text-center">
-          
-          <p>واسه امتیازدادن و همینطور ثبتِ نام تو به عنوان دارنده منبع درسی، لازمه که حساب کاربری داشته‌باشی؛ فقط کافیه اسم و ایمیلت رو وارد کنی...</p>
-          <a class="cta-btn" href="{% url 'users:register' %}">ثبت‌نام</a>
-        </div>
-
-      </div>
-    </section><!-- End Cta Section -->
 
 
 
-    
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container">
-        <div class="section-title">
-          <h2><img src="static/images/ertebat ba ma 2.png" alt="" class="img-fluid" width="70"></h2>
-        </div>
-
-        <div class="row mt-5 d-flex justify-content-center">
-          <div class="col-lg-8 mt-5 mt-lg-0">
-
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-4 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="نام و نام خانوادگی" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="آدرس ایمیل" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="موضوع" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="پیام" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">لطفا صبر کنید...</div>
-                <div class="error-message"></div>
-                <div class="sent-message">پیام شما با موفقیت ارسال شد</div>
-              </div>
-              <div class="text-center"><button type="submit">ارسال</button></div>
-            </form>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
 
