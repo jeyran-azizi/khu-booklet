@@ -30,12 +30,12 @@
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <a href="home.html" class="logo"><img src="static/images/khu booklet logo white.png" alt="" class="img-fluid" width="200" height="500"></a>
+      <a href="index.html" class="logo"><img src="static/images/khu booklet logo white.png" alt="" class="img-fluid" width="200" height="500"></a>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="{% url 'home' %}"><img src="static/images/khooneh.png" alt="" class="img-fluid" width="32"></a></li>
-          <li><a class="nav-link scrollto" href="{% url 'about' %}"><img src="static/images/darbareh ma.png" alt="" class="img-fluid" width="50"></a></li>
+          <li><a class="nav-link scrollto active" href="index.html"><img src="static/images/khooneh.png" alt="" class="img-fluid" width="32"></a></li>
+          <li><a class="nav-link scrollto" href="khuApp/templates/khuApp/about.html"><img src="static/images/darbareh ma.png" alt="" class="img-fluid" width="50"></a></li>
           <li class="dropdown"><a href="{% url 'categories_list' %}"><span><img src="static/images/vorood.png" alt="" class="img-fluid" width="32"></span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="{% url 'users:register' %}">ثبت‌نام</a></li>
@@ -44,7 +44,7 @@
           </li>
           <li class="dropdown"><a href="{% url 'categories_list' %}"><span><img src="static/images/ketabkhooneh white.png" alt="" class="img-fluid" width="55"></span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="{% url 'categories_list' %}">دروس اختصاصی</a></li>
+              <li><a href="khuApp/templates/khuApp/categories_list.html">دروس اختصاصی</a></li>
               <li><a href="{% url 'general' %}">دروس عمومی</a></li>
             </ul>
           </li>
