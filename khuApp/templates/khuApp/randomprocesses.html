@@ -1,4 +1,4 @@
-{% load static %}
+
 <!DOCTYPE html>
 <html lang='fa' dir="rtl"></html>
 
@@ -10,19 +10,19 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <link href="/static/assets/img/favicon.png" rel="icon">
-  <link href="/assets/" rel="apple-touch-icon">
+  <link href="../static/assets/img/favicon.png" rel="icon">
+  <link href="../static/assets/" rel="apple-touch-icon">
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-  <link href="/static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="/static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="/static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="/static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="/static/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="/static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="../static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../static/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <link href="{% static '/assets/css/style.css' %}" rel="stylesheet">
+  <link href="static/assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -30,12 +30,12 @@
 
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center justify-content-between">
-		<a href="home.html" class="logo"><img src="/static/images/khu booklet logo purple.png" alt="" class="img-fluid" width="200" height="500"></a>
+		<a href="home.html" class="logo"><img src="../static/images/khu booklet logo purple.png" alt="" class="img-fluid" width="200" height="500"></a>
 		<nav id="navbar" class="navbar">
 		  <ul>
-			<li><a class="nav-link scrollto active" href="{% url 'home' %}"><img src="/static/images/khooneh purple.png" alt="" class="img-fluid" width="32"></a></li>
-			<li><a class="nav-link scrollto" href="{% url 'about' %}"><img src="/static/images/darbereh ma purple.png" alt="" class="img-fluid" width="50"></a></li>
-			<li class="dropdown"><a href="{% url 'categories_list' %}"><span><img src="/static/images/vorood purple.png" alt="" class="img-fluid" width="32"></span> <i class="bi bi-chevron-down"></i></a>
+			<li><a class="nav-link scrollto active" href="home.html"><img src="../static/images/khooneh purple.png" alt="" class="img-fluid" width="32"></a></li>
+			<li><a class="nav-link scrollto" href="about.html"><img src="../static/images/darbereh ma purple.png" alt="" class="img-fluid" width="50"></a></li>
+			<li class="dropdown"><a href="categories_list.html"><span><img src="../static/images/vorood purple.png" alt="" class="img-fluid" width="32"></span> <i class="bi bi-chevron-down"></i></a>
 			  <ul>
 				<li><a href="{% url 'users:register' %}">ثبت‌نام</a></li>
 				<li><a href="{% url 'users:logout' %}">خروج</a></li>
