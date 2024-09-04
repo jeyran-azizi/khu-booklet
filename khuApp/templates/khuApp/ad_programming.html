@@ -1,210 +1,212 @@
-{% extends 'BookletApp/base.html' %}
-{% load static %}
 
-{% block page_header %}
+<!DOCTYPE html>
+<html lang='fa' dir="rtl"></html>
+
 <head>
-    <link rel="stylesheet" href="/static/css/styles.css">
-	<script src="/static/scripts/script.js"></script>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <style>
-        ul {
-            list-style-type: none;
-        }
-  
-    </style>
+  <title>khu booklet</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-</head>    
+  <link href="/khu-booklet/static/assets/img/favicon.png" rel="icon">
+  <link href="/khu-booklet/static/assets/" rel="apple-touch-icon">
 
-{% endblock page_header %}
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-{% block content %}
+  <link href="/khu-booklet/static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/khu-booklet/static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/khu-booklet/static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/khu-booklet/static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/khu-booklet/static/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="/khu-booklet/static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="/khu-booklet/static/assets/css/style.css" rel="stylesheet">
+</head>
+
 <body>
-    <div class="card mb-4">
-        <div class="card-body">
 
-            <div class="container">
-                <div class="row">
 
-                    <div class="col-md-4">
-                        <img src="/static/images/booklet2.jpg" alt="image" class="img-fluid">
-                    </div>
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-between">
+		<a href="/khu-booklet/index" class="logo"><img src="/khu-booklet/static/images/khu booklet logo purple.png" alt="" class="img-fluid" width="200" height="500"></a>
+		<nav id="navbar" class="navbar">
+		  <ul>
+			<li><a class="nav-link scrollto active" href="/khu-booklet/index"><img src="/khu-booklet/static/images/khooneh purple.png" alt="" class="img-fluid" width="32"></a></li>
+			<li><a class="nav-link scrollto" href="about.html"><img src="/khu-booklet/static/images/darbereh ma purple.png" alt="" class="img-fluid" width="50"></a></li>
+			<li><a class="nav-link scrollto " href="categories_list.html"><img src="/khu-booklet/static/images/ketabkhooneh purple.png" alt="" class="img-fluid" width="55"></a></li>
+			<li><a class="nav-link scrollto " href="contact.html"><img src="/khu-booklet/static/images/ertebat ba ma purple.png" alt="" class="img-fluid" width="65"></a></li>
+			<li><a class="nav-link scrollto" href="help.html"><img src="/khu-booklet/static/images/rahnama purple.png" alt="" class="img-fluid" width="36"></a></li>
+		  </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
 
-                    <div class="col-md-4 text-right">
-                        <ul>
-                            <li class="list-item">
-                                <span class="name" style="font-size: 20px;">نام استاد: </span>
-                                <span class="description" style="font-size: 20px; color: darkorange;"><b>دکتر مهدی چراخلو</b></span>
-                               
-                                
-                            </li>
-                            <li class="list-item">
-                                <span class="name" style="font-size: 20px;">نیمسال: </span>
-                                <span class="description" style="font-size: 20px; color: darkorange;"><b>1401-1402</b></span>
-                            </li>
+    </div>
+  </header>
 
-                        </li>
-                        <li class="list-item">
-                            <span class="name" style="font-size: 20px;">زبان برنامه‌نویسی: </span>
-                            <span class="description" style="font-size: 20px; color: darkorange;"><b>پایتون</b></span>
-                        </li>
-              
-                            <li class="list-item">
-                                <span class="name" style="font-size: 20px;">فرمت: </span>
-                                <span class="description" style="font-size: 20px; color: darkorange;"><b>پی‌دی‌اف</b></span>
-                             
-                               
-                            </li>
-                            <li class="list-item">
-                                <span class="name" style="font-size: 20px;">تعداد صفحات: </span>
-                                <span class="description" style="font-size: 20px; color: darkorange;"><b>25 صفحه</b></span>
+  <main id="main">
+
+    <section id="services" class="services">
+
+    <div class="container">
+		<div class="row">
+			<div class="col-md-6 col-lg-2 d-flex align-items-stretch mb-5 mb-lg-0">
+			  <div class="icon-box">
+				<div class="icon"><a href="https://drive.google.com/drive/folders/17nnnYOPw43BVaHD58UFAIYmNL_z6Tv8h?usp=sharing">
+          <img src="/khu-booklet/static/images/booklet icon.svg" alt="" class="img-fluid" width="120">
+        </div>
+				<h4 class="title">جزوه</h4></a>
+				<p class="description">دکتر مهدی چراخلو</p>
+        <p class="description">زمستان 1401</p>
+			  </div>
+			</div>
+
+
+      <div class="col-md-6 col-lg-2 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div class="icon-box">
+            <div class="icon"><a href="https://drive.google.com/drive/folders/1faKDDDuaAKabOGFeg1oEdVZtfcb3VFlw?usp=sharing">
+              <img src="/khu-booklet/static/images/practice icon.png" alt="" class="img-fluid" width="120">
+            </div>
+            <h4 class="title">تمرینات</h4></a>
+            <!--p class="description">(به همراه پاسخ)</p-->
+          </div>
+          </div>
+
+        <div class="col-md-6 col-lg-2 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div class="icon-box">
+            <div class="icon"><a href="https://drive.google.com/drive/folders/1yEJHpgNdb3R3UEzn-_Fr-IbdNyrj6Tes?usp=sharing">
+              <img src="/khu-booklet/static/images/test icon.png" alt="" class="img-fluid" width="120">
+            </div>
+            <h4 class="title">نمونه سوالات امتحان</h4></a>
+            <p class="description">(میانترم)</p>
+          </div>
+      </div>
+
+
+
+         
+       
+      <div class="container">
+		<div class="row">
+			<div class="col-md-6 col-lg-2 d-flex align-items-stretch mb-5 mb-lg-0">
+			  <div class="icon-box">
+				<div class="icon"><a href="https://drive.google.com/file/d/1VjMDuFtsyrRlB3LQm0aV-Zdmqb-8ZMYW/view?usp=sharing">
+          <img src="/khu-booklet/static/images/booklet icon.svg" alt="" class="img-fluid" width="120">
+        </div>
+				<h4 class="title">جزوه ترم مجازی</h4></a>
+				<p class="description">دکتر بردیا پناه‌بحق</p>
+        <p class="description">زمستان 1400</p>
+			  </div>
+			</div>
+
+			<!--div class="col-md-6 col-lg-2 d-flex align-items-stretch mb-5 mb-lg-0">
+				<div class="icon-box">
+				  <div class="icon"><a href="">
+            <img src="/khu-booklet/static/images/source icon.svg" alt="" class="img-fluid" width="120">
+          </div>
+				  <h4 class="title">مرجع</h4></a>
+				  <p class="description"></p>
+				</div>
+      </div>
+
+      <div class="col-md-6 col-lg-2 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div class="icon-box">
+            <div class="icon"><a href="https://drive.google.com/file/d/1X8h2u9RxoIB2ffzB712-i9VbczO8AFVk/view?usp=sharing">
+              <img src="/khu-booklet/static/images/practice icon.png" alt="" class="img-fluid" width="120">
+            </div>
+            <h4 class="title">تمرینات</h4></a>
+            <p class="description">(به همراه پاسخ)</p>
+          </div>
+          </div>
+
+        <div class="col-md-6 col-lg-2 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div class="icon-box">
+            <div class="icon"><a href="">
+              <img src="/khu-booklet/static/images/test icon.png" alt="" class="img-fluid" width="120">
+            </div>
+            <h4 class="title">نمونه سوالات امتحان</h4></a>
+            <p class="description">ترم ...</p>
+          </div>
+      </div-->
+
+       
+
+		
+  </main>
+
+
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <img src="/khu-booklet/static/images/logo khu booklet.png" alt="" class="img-fluid" width="500">
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>دسترسی سریع</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="/khu-booklet/index">خونه</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="categories_list.html">کتابخونه</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="about.html">درباره ما</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="help.html">راهنما</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">حریم خصوصی</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>دسته‌بندی‌های پیشنهادی</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">اختصاصی</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">عمومی</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">خارج رشته</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">انتخابی</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">اختیاری</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>اطلاع از منابع جدید</h4>
             
-                                
-                            </li><br>
-                            
-                            <li class="list-item">
-                                <span class="name" style="font-size: 20px;">توسط: </span>
-                                <span class="description" style="font-size: 20px; color: orangered;"><b>جیران عزیزی</b></span>
-                               
-                            </li>
-            
-                            <li class="list-item">
-                                <a href="https://drive.google.com/file/d/1bKY1z-PtxV_QNWKdc2Y7NmhE9Jadirb2/view?usp=sharing" style="font-size: 20px;
-                                font-style: italic;">
-                                      جزوه بخش هوش مصنوعی
-                                    </a><br>
-                            </li>
-                        </ul>
-                    </div>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="عضویت">
+            </form>
+          </div>
 
-                    <div class="col-md-4">
-                        <ul>
-                            <h5 class="text-center" style="color:darkorange;"><b>امتیازدهی</b></h5><br>
-                            <li>
-
-                                <div class="file text-center" id="file1">
-                                    <h6 class="text-center" style="color: navy;"><b>جزوه بخش هوش مصنوعی</b></h6>
-                                    <div class="rating-container">
-                                            <i class="star fas fa-star"></i>
-                                            <i class="star fas fa-star"></i>
-                                            <i class="star fas fa-star"></i>
-                                            <i class="star fas fa-star"></i>
-                                            <i class="star fas fa-star"></i>
-                                    </div>
-                                    <p class="text-center" style="font-style: italic; font-size: 15px;">میانگین امتیاز: <span id="average-rating-1">0</span></p>
-                                </div>    
-                            </li>
-                        </ul>
-                    </div>        
-                </div>
-            </div>        
-        </div>   
+        </div>
+      </div>
     </div>
 
-    <div class="card mb-4">
-        <div class="card-body">
+    <div class="container d-md-flex py-4">
 
-            <div class="container">
-                <div class="row">
+      
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-telegram"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-google"></i></a>
+      </div>
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>khu booklet</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits"></div>
+      </div>
+    </div>
+  </footer>
+  
 
-                    <div class="col-md-4">
-                        <img src="/static/images/booklet2.jpg" alt="image" class="img-fluid">
-                    </div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-                    <div class="col-md-4 text-right">
-                        <ul>
-                            <li class="list-item">
-                                <span class="name" style="font-size: 20px;">نام استاد: </span>
-                                <span class="description" style="font-size: 20px; color: darkorange;"><b>دکتر مهدی چراخلو</b></span>
-                               
-                                
-                            </li>
-                            <li class="list-item">
-                                <span class="name" style="font-size: 20px;">نیمسال: </span>
-                                <span class="description" style="font-size: 20px; color: darkorange;"><b>1401-1402</b></span>
-                            </li>
+  <script src="/khu-booklet/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/khu-booklet/static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/khu-booklet/static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/khu-booklet/static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="/khu-booklet/static/assets/vendor/php-email-form/validate.js"></script>
 
-                        </li>
-                        <li class="list-item">
-                            <span class="name" style="font-size: 20px;">زبان برنامه‌نویسی: </span>
-                            <span class="description" style="font-size: 20px; color: darkorange;"><b>پایتون</b></span>
-                        </li>
-              
-                            <li class="list-item">
-                                <span class="name" style="font-size: 20px;">فرمت: </span>
-                                <span class="description" style="font-size: 20px; color: darkorange;"><b>پی‌دی‌اف</b></span>
-                             
-                               
-                            </li>
-                            <li class="list-item">
-                                <span class="name" style="font-size: 20px;">تعداد صفحات: </span>
-                                <span class="description" style="font-size: 20px; color: darkorange;"><b>76 صفحه</b></span>
-            
-                                
-                            </li><br>
-                            
-                            <li class="list-item">
-                                <span class="name" style="font-size: 20px;">توسط: </span>
-                                <span class="description" style="font-size: 20px; color: orangered;"><b>تهمینه علیجانی</b></span>
-                               
-                            </li>
-            
-                            <li class="list-item">
-                                <a href="https://drive.google.com/file/d/12Hv3Txz_og28EZ4ar10hTlZV8mBf-0nE/view?usp=sharing" style="font-size: 20px;
-                                font-style: italic;">
-                                      جزوه بخش هوش مصنوعی
-                                    </a><br>
-                            </li>
-                        </ul>
-                    </div>
+  <script src="/khu-booklet/static/assets/js/main.js"></script>
 
-                    <div class="col-md-4">
-                        <ul>
-                            <h5 class="text-center" style="color:darkorange;"><b>امتیازدهی</b></h5><br>
-                            <li>
-
-                                <div class="file text-center" id="file1">
-                                    <h6 class="text-center" style="color: navy;"><b>جزوه بخش هوش مصنوعی</b></h6>
-                                    <div class="rating-container">
-                                            <i class="star fas fa-star"></i>
-                                            <i class="star fas fa-star"></i>
-                                            <i class="star fas fa-star"></i>
-                                            <i class="star fas fa-star"></i>
-                                            <i class="star fas fa-star"></i>
-                                    </div>
-                                    <p class="text-center" style="font-style: italic; font-size: 15px;">میانگین امتیاز: <span id="average-rating-1">0</span></p>
-                                </div>    
-                            </li>
-                        </ul>
-                    </div>        
-                </div>
-            </div>        
-        </div>   
-    </div>        
-    
-    
 </body>
 
-   <!--div class="container mt-4">
-    <h2>Advanced Programming</h2>
-
-
-    <div class="card mb-4">
-        <div class="card-body">
-            <h5 class="card-title">Booklet</h5>
-            <p class="card-text">Dr.Mahdi Charakhloo- 1401</p>
-            <p>By: Jeyran Azizi</p>
-            <a href="/Downloads/AI_ (1).pdf" download class="btn btn-primary">Download</a>
-        </div>
-    </div>
-
-    <div class="card mb-4">
-        <div class="card-body">
-            <h5 class="card-title">Booklet</h5>
-            <p class="card-text">Dr.Mahdi Charakhloo- 1401</p>
-            <p>By: Tahmineh Alijani</p>
-            <a href="/Downloads/AI.pdf" download class="btn btn-primary">Download</a>
-        </div>
-    </div-->
-
-
-{% endblock content %}	
+</html>
