@@ -26,6 +26,19 @@
 </head>
 
 <body>
+
+
+
+	<!-- Search Box -->
+  <div class="search-container" style="text-align: center; margin-top: 20px;">
+    <input type="text" id="search-box" onkeyup="searchDescriptions()" placeholder="جستجو در توضیحات..." style="width: 300px; padding: 10px;">
+  </div>
+
+
+
+
+
+	
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center justify-content-between">
@@ -520,7 +533,35 @@
   <script src="/khu-booklet/static/assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="/khu-booklet/static/assets/js/main.js"></script>
+  <script src="/khu-booklet/static/assets/js/main.js">
+
+
+	  // JavaScript function to search and filter the sections based on the descriptions
+    function searchDescriptions() {
+      const searchTerm = document.getElementById('search-box').value.toLowerCase();
+      const descriptionDivs = document.querySelectorAll('.icon-box .description');
+
+      descriptionDivs.forEach(description => {
+        const text = description.textContent || description.innerText;
+        const iconBox = description.closest('.icon-box'); // Get the parent .icon-box element
+        
+        if (text.toLowerCase().includes(searchTerm)) {
+          iconBox.parentElement.style.display = '';  // Show the section if it matches the search term
+        } else {
+          iconBox.parentElement.style.display = 'none';  // Hide the section if it doesn't match
+        }
+      });
+    }
+
+
+
+
+
+
+
+
+	  
+  </script>
 
 </body>
 
